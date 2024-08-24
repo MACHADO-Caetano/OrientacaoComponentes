@@ -1,0 +1,13 @@
+ul{
+    list-style: none;
+}
+
+ul li:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+table, td, tr, th{
+    border: 1px solid black;
+}
