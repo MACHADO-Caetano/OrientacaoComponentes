@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card'; // Importando o Card
+import Card from './Card';
 
 function ListaCards({cardsData}) {
   return (

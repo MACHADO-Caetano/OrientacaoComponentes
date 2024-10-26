@@ -3,20 +3,20 @@ import { useFetch } from "../hooks/useFetch";
 import { useState } from "react";
 
 function Local({user}) {
-    const [cepEvento, setCepEvento] = useState(["95560000"]); // Estado para o CEP
+    const [cepEvento, setCepEvento] = useState(["95560000"]);
 
-    // Usa o hook useFetch para buscar dados na API do ViaCEP
+    
     const { cep } = useFetch(`https://viacep.com.br/ws/${cepEvento}/json/`); 
 
     function handleButton() {
-        // Você pode definir um novo CEP aqui, se desejar
-        const novoCep = "88990000"; // Ou qualquer outro CEP
-        setCepEvento(novoCep); // Atualiza o estado com o novo CEP
+        
+        const novoCep = "88990000"; 
+        setCepEvento(novoCep); 
     }
 
     return ( 
         <>  
-            {cep && (       // Exibe o conteúdo apenas se o CEP foi buscado
+            {cep && (       
                 <>
                     <h2>Seja bem vindo, {user}</h2>
 
@@ -32,7 +32,7 @@ function Local({user}) {
                     </div>
                 </>
             )}
-        </> //Fragment --> Agrupa vários elementos JSX
+        </> 
     );
 }
 
