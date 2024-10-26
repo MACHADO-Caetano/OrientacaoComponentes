@@ -33,7 +33,7 @@ function Formulario({ addCard }) {
     return (
         <form onSubmit={handleSubmit}>
             <fieldset >
-                <legend >Preencha seus dados</legend>
+                <h6>Dados do Ingresso:</h6>
 
                 <FormularioInput label={"Nome"} placeholder={"Digite seu nome"} name="nome" />
                 <br />
