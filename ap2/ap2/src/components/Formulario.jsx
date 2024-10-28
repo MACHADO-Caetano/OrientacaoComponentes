@@ -16,10 +16,10 @@ function Formulario({ addCard }) {
 
         const dados = {
             nome: form.get("nome"),
-            telefone: form.get("telefone"),
-            srcImage: form.get("image"),
-            egresso_convidado: form.get("egresso_convidado"),
-            pago: form.get("pago")
+            telefone: form.get("fone"),
+            imagemUsuario: form.get("image"),
+            participante: form.get("participante"),
+            pagamento: form.get("pagamento")
         }
 
         clearForms(event.target)
@@ -38,7 +38,7 @@ function Formulario({ addCard }) {
                 <FormularioInput label={"Nome"} placeholder={"Digite seu nome"} name="nome" />
                 <br />
 
-                <FormularioInput label={"Telefone"} placeholder={"Digite seu telefone"} name="telefone" />
+                <FormularioInput label={"Telefone"} placeholder={"Digite seu telefone"} name="fone" />
 
                 <div >
                     <p>Egresso/Convidado</p>
@@ -50,9 +50,9 @@ function Formulario({ addCard }) {
 
                 <div >
                     <p>Pago</p>
-                    <input type="radio" id="pago-sim" name="pago" value="true" />
+                    <input type="radio" id="pago-sim" name="pagamento" value="true" />
                     <label htmlFor="pago-sim">Sim</label>
-                    <input type="radio" id="pago-nao" name="pago" value="false" />
+                    <input type="radio" id="pago-nao" name="pagamento" value="false" />
                     <label htmlFor="pago-nao">Não</label>
                 </div>
                 <br />
@@ -60,11 +60,12 @@ function Formulario({ addCard }) {
                 <br />
                 <input
                     type="text"
-                    id="imagem"
-                    name="imagemUsuario"
+                    id="imagemUsuario"
+                    name="image"
                     placeholder="URL da imagem"
                 />
                 <br />
+                <button type="submit">teste</button>
                 <Botao nome={"Salvar"} colorButton="black" />
             </fieldset>
         </form>

@@ -6,16 +6,16 @@ function ListaCards({cardsData}) {
     <div>
       
       <div >
-        {cardsData.map((card) => (
-          <div> 
+        {cardsData.map((card, index) => (
+          <div key={index} > {/* Adiciona a chave ao elemento div */}
             <Card
-              srcImage={card.srcImage}
+              srcImage={card.imagemUsuario}
               alt="Foto de perfil"
               style={{borderRadius: '50%'}}
               nome={card.nome}
-              fone={card.telefone}
-              participante={card.egresso_convidado ? "Egresso/Convidado" : "Estudante"}
-              pagamento={card.pago ? "Confirmado" : "Não confirmado"}
+              fone={card.fone}
+              participante={card.participante ? "Egresso/Convidado" : "Estudante"}
+              pagamento={card.pagamento ? "Confirmado" : "Não confirmado"}
             />
           </div>
           

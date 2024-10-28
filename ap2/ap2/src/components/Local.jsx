@@ -21,7 +21,7 @@ function Local({user}) {
                     <h2>Seja bem vindo, {user}</h2>
 
                     <div >
-                        <Botao nome={"Localização"} onClick={handleButton}/>
+                        <Botao nome={"Localização"} click={handleButton}/>
                         <div >
                                 <p>CEP: {cep.cep}</p>
                                 <p>Cidade: {cep.localidade}</p>
