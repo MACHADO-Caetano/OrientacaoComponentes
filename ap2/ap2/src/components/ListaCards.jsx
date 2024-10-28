@@ -9,7 +9,7 @@ function ListaCards({cardsData}) {
         {cardsData.map((card, index) => (
           <div key={index} > {/* Adiciona a chave ao elemento div */}
             <Card
-              srcImage={card.imagemUsuario}
+              imagemUsuario={card.imagemUsuario}
               alt="Foto de perfil"
               style={{borderRadius: '50%'}}
               nome={card.nome}

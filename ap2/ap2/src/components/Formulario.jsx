@@ -9,7 +9,7 @@ function Formulario({ addCard }) {
         const form = new FormData(event.target)
 
 
-        if (!form.get("nome") || !form.get("fone") || !form.get("image") || !form.get("participante") || !form.get("pagamento")) {
+        if (!form.get("nome") || !form.get("fone") || !form.get("imagemUsuario") || !form.get("participante") || !form.get("pagamento")) {
             alert('Campos incompletos');
             return;
         }
@@ -17,7 +17,7 @@ function Formulario({ addCard }) {
         const dados = {
             nome: form.get("nome"),
             telefone: form.get("fone"),
-            imagemUsuario: form.get("image"),
+            imagemUsuario: form.get("imagemUsuario"),
             participante: form.get("participante"),
             pagamento: form.get("pagamento")
         }
@@ -61,7 +61,7 @@ function Formulario({ addCard }) {
                 <input
                     type="text"
                     id="imagemUsuario"
-                    name="image"
+                    name="imagemUsuario"
                     placeholder="URL da imagem"
                 />
                 <br />
