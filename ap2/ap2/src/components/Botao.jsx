@@ -1,6 +1,6 @@
-function Botao({ nome }) {
+function Botao({ nome , click}) {
     return (
-        <button style={{ display: "flex", padding: "auto" }} type="submit"> {nome}</button>
+        <button style={{ display: "flex", padding: "auto" }} type="submit" onClick={click}> {nome}</button>
     );
 }
 
