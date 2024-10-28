@@ -20,13 +20,9 @@ function App() {
 
       <Local user={"Caetano"} />
 
-
-
-      <ListaCards cardsData={cardsData} />
-
-
       <Formulario addCard={addCard} />
 
+      <ListaCards cardsData={cardsData} />
     </>
   );
 }

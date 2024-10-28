@@ -65,7 +65,7 @@ function Formulario({ addCard }) {
                     placeholder="URL da imagem"
                 />
                 <br />
-                <Botao nome={"Salvar"} colorButton="black" />
+                <button type="submit">Enviar</button>
             </fieldset>
         </form>
     );

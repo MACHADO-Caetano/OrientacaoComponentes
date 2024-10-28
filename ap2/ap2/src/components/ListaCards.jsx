@@ -9,13 +9,12 @@ function ListaCards({cardsData}) {
         {cardsData.map((card) => (
           <div> 
             <Card
-              srcImage={card.srcImage}
-              alt="Foto de perfil"
-              style={{borderRadius: '50%'}}
+              imagemUsuario={card.imagemUsuario}
+              alt="Foto Usuário"
               nome={card.nome}
-              fone={card.telefone}
-              participante={card.egresso_convidado ? "Egresso/Convidado" : "Estudante"}
-              pagamento={card.pago ? "Confirmado" : "Não confirmado"}
+              fone={card.fone}
+              participante={card.participante ? "Egresso/Convidado" : "Estudante"}
+              pagamento={card.pagamento ? "Confirmado" : "Não confirmado"}
             />
           </div>
           
