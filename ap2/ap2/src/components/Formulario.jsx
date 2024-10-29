@@ -66,7 +66,6 @@ function Formulario({ addCard }) {
                 />
                 <br />
 
-                <button type="submit">teste</button>
                 <Botao nome={"Salvar"} colorButton="black" />
 
             </fieldset>
