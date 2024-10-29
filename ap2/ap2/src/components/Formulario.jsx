@@ -65,12 +65,10 @@ function Formulario({ addCard }) {
                     placeholder="URL da imagem"
                 />
                 <br />
-<<<<<<< HEAD
-                <button type="submit">Enviar</button>
-=======
+
                 <button type="submit">teste</button>
                 <Botao nome={"Salvar"} colorButton="black" />
->>>>>>> 505704a0f2f817698f5335f2e27c1a40328e5258
+
             </fieldset>
         </form>
     );
